@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Odonto Vila Maria</title>
+<style>
+  body{font-family:Arial,sans-serif;margin:0;padding:0;color:#333;}
+  header{background:#005A9C;color:#fff;padding:1rem;text-align:center;}
+  nav{margin:10px;}
+  nav button{margin:5px;padding:10px 15px;border:none;border-radius:4px;background:#004a7c;color:#fff;cursor:pointer;}
+  section{padding:2rem;display:none;}
+  section.active{display:block;}
+  footer{background:#eee;text-align:center;padding:1rem;margin-top:2rem;}
+  .btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#005A9C;color:#fff;border:none;border-radius:4px;text-decoration:none;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Odonto Vila Maria</h1>
+  <nav>
+    <button onclick="showSection('home')">Início</button>
+    <button onclick="showSection('sobre')">Sobre</button>
+    <button onclick="showSection('servicos')">Serviços</button>
+    <button onclick="showSection('contato')">Contato</button>
+  </nav>
+</header>
+
+<section id="home" class="active">
+  <h2>Bem-vindo à Odonto Vila Maria</h2>
+  <p>Somos uma clínica odontológica formada em 2016, dedicada a oferecer atendimento de excelência em saúde bucal na Zona Norte de São Paulo, com foco em tratamentos modernos e humanizados.</p>
+</section>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p>A Clínica Odontológica Azevedo Ltda, conhecida como Odonto Vila Maria, atua desde março de 2016 sob a gestão de José Rafael Lisboa de Azevedo. Destacamo-nos pela prestação de serviços odontológicos completos, aliados a um atendimento acolhedor e ético.</p>
+  <p>Atendemos em um ambiente moderno na Vila Suzana, com equipe altamente qualificada e estrutura completa para cuidar da sua saúde oral.</p>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Check‑up e limpeza profissional</li>
+    <li>Restaurações com resina, amálgama ou cerâmica</li>
+    <li>Tratamento de canal (endodontia)</li>
+    <li>Instalação de próteses fixas e removíveis</li>
+    <li>Clareamento dental (doméstico e clínico)</li>
+    <li>Tratamentos estéticos (facetas, lentes de contato dental)</li>
+    <li>Ortodontia (aparelhos convencionais e estéticos)</li>
+    <li>Periodontia (tratamento de gengiva e prótese sobre implante)</li>
+  </ul>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p><strong>Endereço:</strong> Rua Dr. José de Andrade Figueira, 385, Apt 41, Vila Suzana, São Paulo – SP, CEP 05709‑010</p>
+  <p><strong>Telefone / WhatsApp:</strong> <a href="tel:+551126314037">(11) 2631‑4037</a></p>
+  <p><strong>E‑mail:</strong> <a href="mailto:contato@clinicaodontologicaazevedo.com.br">contato@clinicaodontologicaazevedo.com.br</a></p>
+  <a class="btn" href="https://wa.me/551126314037" target="_blank">Fale no WhatsApp</a>
+</section>
+
+<footer>
+  &copy; 2025 Odonto Vila Maria | CNPJ 24.383.427/0001‑84 – Clínica Odontológica Azevedo Ltda
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
